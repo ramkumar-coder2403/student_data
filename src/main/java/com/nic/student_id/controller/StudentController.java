@@ -31,7 +31,7 @@ public class StudentController {
 	}
 	
 	@PostMapping("/saveStudent")
-	public String save(@RequestBody Student student) {
+	public String save(Student student) {
 		return service.saveStudent(student);
 	}
 	
